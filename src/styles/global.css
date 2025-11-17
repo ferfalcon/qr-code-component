@@ -1,0 +1,52 @@
+:root {
+	/* Colours */
+	--cl-neutral-800: hsl(217, 44%, 22%);
+	--cl-neutral-500: hsl(219, 15%, 55%);
+  --cl-neutral-600: hsl(216, 95%, 58%);
+	--cl-neutral-200: hsl(211, 45%, 89%);
+	--cl-neutral-100: hsl(0, 0%, 100%);
+
+	/* TYPOGRAPHY */
+	/* Family */
+	--ff-main: 'Outfit', sans-serif;
+
+	/* Size */
+	--fs-400: .938rem;
+	--fs-800: 1.375rem;
+
+	/* Weight */
+	--fw-regular: 400;
+	--fw-bold: 700;
+
+	/* Element */
+	--ty-heading: var(--fw-bold) var(--fs-800) var(--ff-main);
+	--ty-body: var(--fw-regular) var(--fs-400) var(--ff-main);
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	font-style: italic;
+}
+
+body {
+	display: grid;
+	align-content: center;
+	margin: 0;
+	min-height: 100svh;
+	text-align: center;
+	font: var(--ty-body);
+	font-family: var(--ff-main);
+	background: var(--cl-neutral-200);
+}

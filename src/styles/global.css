@@ -3,7 +3,8 @@
 	--cl-neutral-100: hsl(0, 0%, 100%);
 	--cl-neutral-200: hsl(211, 45%, 89%);
 	--cl-neutral-500: hsl(219, 15%, 55%);
-  --cl-neutral-600: hsl(216, 95%, 58%);
+  --cl-neutral-600: hsl(216, 100%, 61%);
+  --cl-neutral-700: hsl(216, 95%, 58%);
 	--cl-neutral-800: hsl(217, 44%, 22%);
 
 	/* TYPOGRAPHY */
@@ -51,7 +52,7 @@ body {
 	background: var(--cl-neutral-200);
 }
 
-.sr-only {
+.htc {
   position: absolute;
   height: .005rem;
   width: .005rem;

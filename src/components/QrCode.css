@@ -12,12 +12,39 @@
 .qr-code__image-wrapper {
   border-radius: .625rem;
   margin: 0 0 1.5rem;
-  background: var(--cl-neutral-600);
   aspect-ratio: 1;
+  position: relative;
+  overflow: hidden;
+  background: var(--cl-neutral-700);
+}
+
+.qr-code__image-wrapper::before, 
+.qr-code__image-wrapper::after {
+  content: '';
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background: var(--cl-neutral-600);
+  display: block;
+  position: absolute;
+  z-index: 0;
+}
+
+.qr-code__image-wrapper::before {
+  width: 328px;
+  left: -131px;
+  top: -164px;
+}
+
+.qr-code__image-wrapper::after {
+  width: 270px;
+  left: 131px;
+  top: 204px;
 }
 
 .qr-code__image {
+  position: relative;
   margin: 4rem auto 0;
+  z-index: 1;
 }
 
 .qr-code__heading {

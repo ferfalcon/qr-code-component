@@ -1,10 +1,10 @@
 :root {
 	/* Colours */
-	--cl-neutral-800: hsl(217, 44%, 22%);
+	--cl-neutral-100: hsl(0, 0%, 100%);
+	--cl-neutral-200: hsl(211, 45%, 89%);
 	--cl-neutral-500: hsl(219, 15%, 55%);
   --cl-neutral-600: hsl(216, 95%, 58%);
-	--cl-neutral-200: hsl(211, 45%, 89%);
-	--cl-neutral-100: hsl(0, 0%, 100%);
+	--cl-neutral-800: hsl(217, 44%, 22%);
 
 	/* TYPOGRAPHY */
 	/* Family */
@@ -49,4 +49,14 @@ body {
 	font: var(--ty-body);
 	font-family: var(--ff-main);
 	background: var(--cl-neutral-200);
+}
+
+.sr-only {
+  position: absolute;
+  height: .005rem;
+  width: .005rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
